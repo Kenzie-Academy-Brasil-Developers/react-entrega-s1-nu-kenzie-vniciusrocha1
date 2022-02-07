@@ -1,0 +1,53 @@
+.landingPage{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    background-color: #212529;
+}
+.landingPage > .landingPage--left{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: initial;
+    justify-content: center;
+    gap: 30px;
+}
+.landingPage--left > .left--NuKenzie{
+    width:123px;
+    height:20px;
+}.landingPage--left > .left--text1{
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 48px;
+    color:#fff;
+}.landingPage--left > .left--text2{
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 26px;
+    color:#fff;
+}.landingPage--left > .left--button{
+    width:241px;
+    height:48px;
+}
+.landingPage > .landingPage--rigth{
+    display:flex;
+    width:100%;
+    height:100%;
+}
+.landingPage > .landingPage--rigth > .right--landing{
+    width:593px;
+    height:593px;
+}
+@media screen and (max-width:768px){
+    .landingPage > .landingPage--left{
+        align-items: center;
+    }
+    .landingPage--right{
+        display:none;
+    }
+}
