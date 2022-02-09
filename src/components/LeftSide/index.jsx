@@ -7,6 +7,7 @@ const LeftSide = ({listTransactions,setListTransactions,filtro}) => {
         form.preventDefault();
         let dados = {id};
         for (const [name,value] of new FormData(form.target)) dados[name.split('--')[1]] = value;
+        dados.valor = (dados.tipo === "Despesa") ? Number(dados.valor) * -1 : Number(dados.valor);
         setListTransactions([...listTransactions,dados]);
         newId(id + 1);
         form.target.reset();
